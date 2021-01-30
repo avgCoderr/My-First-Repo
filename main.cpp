@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -46,10 +46,10 @@ int main()
   }
   
 
-  cout << endl << endl << "You want a DNA strand or RNA strand? (Enter the word idiot!)" << endl;
+  cout << endl << endl << "You want a DNA strand or RNA strand?" << endl;
   cin >> strand;	// taking string as a input
 
-  if (strand[0] == 'D' && strand[1] == 'N' && strand[2] == 'A')	   // printing DNA strand 
+  if (strand == "DNA")	   // printing DNA strand 
   {
     for(int j=0; j<16; j++)
     {
@@ -61,7 +61,7 @@ int main()
     }
   }
 
-  else if (strand[0] == 'R' && strand[1] == 'N' && strand[2] == 'A')	// printing RNA strand
+  else if (strand == "RNA")	// printing RNA strand
   {
     for(int j=0; j<16; j++)
     {
@@ -74,7 +74,7 @@ int main()
     }
   }
   
-  else cout << "Please get lost! I won't even loop it for you"  << endl;	// output of false input 
+  else cout << "Oops! Your input was misspelled"  << endl;	// output of false input 
   
 
     return 0;
